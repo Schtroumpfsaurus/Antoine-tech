@@ -1,0 +1,974 @@
+.btn-group {
+    text-align: center; /* Center the buttons within the container */
+}
+
+.btn-group button {
+    display: inline-block; /* Make the buttons inline-block to align them horizontally */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    margin: 0 15px; /* Add some margin between buttons */
+    border-radius: 10%;
+    margin-top: 50px;
+}
+
+.page-content {
+    display: none; /* Hide the page content by default */
+    min-width: 100px; /* Set a minimum width for the content area */
+    max-height: auto;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+.page-content.active {
+    display: block; /* Show the page content when active */
+}
+.content-container {
+    padding-left: 70px;
+}
+.main {
+    margin: -100px auto 0;
+    max-width: 1300px;
+    padding:25px
+}
+body {
+    letter-spacing: 1px;
+    font-weight: 300;
+    background-color: var(--black-color);
+    color: var(--text-color);
+    transition:all .2s ease
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: __inter_Fallback_20b187, ui-sans-serif, system-ui, -apple-system, "system-ui", Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji"
+}
+
+.hero-title {
+    z-index: 1;
+    display: flex;
+    font-weight: 400;
+    font-size: 75px;
+    margin-top:80px;
+    margin-left: 100px;
+    margin-bottom: 30px;
+    background: -webkit-linear-gradient(#38eded, #96ccda);
+    background-clip: text;
+    -webkit-text-fill-color:transparent
+}
+
+.hero-description {
+    max-width: 750px;
+    line-height: 1.8;
+    font-size:20px;
+    margin-left: 100px;
+}
+.about-description {
+    margin-top: 15px;
+    margin-right: 150px;
+    font-size: 17px;
+}
+.about-title {
+    margin-top: 75px;
+}
+.img1{
+    width: 250px;
+    height: 250px;
+}
+#rightImage {
+    right: 300px;
+    position: fixed;
+    margin-top: 60px;
+  }
+.about-container {
+    gap: 10px;
+    display: flex;
+    flex-direction:column
+}
+
+.about-title, .about-experience-heading {
+    font-size: 18px;
+    font-weight:400
+}
+
+.about-description {
+    font-size: 14px;
+    line-height:1.6
+}
+.about-experience-section {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-top:30px
+}
+
+.about-experience-item {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:10px
+}
+
+.about-experience-date {
+    font-size: 14px;
+    line-height: 1.5;
+    width:200px
+}
+
+.about-experience-title {
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight:400
+}
+
+.about-experience-description {
+    font-size: 14px;
+    line-height: 1.6;
+    max-width:1100px
+}
+
+.about-experience-technologies {
+    gap: 7px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:15px
+}
+.about-experience-technology {
+    font-size: 12px;
+    color: var(--green);
+    border: 1px solid var(--green);
+    padding: 3px 6px;
+    border-radius: 2px;
+    background-color:#40cf8f0f
+}
+.skills-container {
+    gap: 10px;
+    display: flex;
+    margin-top: 30px;
+    flex-direction:column
+}
+
+.skills-wrapper {
+    gap: 6px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size:12px
+}
+
+.skills-wrapper span {
+    padding: 5px;
+    border-radius: 2px;
+    border: 1px solid #333333;
+    background-color: #232323;
+    box-shadow:0 2px 3px #0000003d
+}
+.about-container {
+    gap: 10px;
+    display: flex;
+    flex-direction:column
+}
+
+.about-title, .objective-title, .about-experience-heading, .skills-heading {
+    font-size: 18px;
+    font-weight:400
+}
+
+.about-description, .objective-description {
+    font-size: 14px;
+    line-height:1.6
+}
+@media screen and (max-width: 1515px) {
+    .img1{
+        display: block;
+        width: 250px;
+        height: 250px;
+        top: 10px;
+        right: 5px;
+    }
+    #rightImage {
+        position: relative;
+        right: -1000px;
+        margin-top: 15px;
+    }
+
+
+}
+@media screen and (max-width: 1310px) {
+   .img1{
+        display: block;
+        width: 250px;
+        height: 250px;
+        top: 25px;
+        right: 5px;
+    }
+    #rightImage {
+        position: relative;
+        right: -925px;
+        margin-top: 30px;
+    }
+    
+}
+@media screen and (max-width: 1270px) {
+    .img1{
+        display: block;
+        width: 250px;
+        height: 250px;
+        top: 25px;
+        right: 5px;
+    }
+    #rightImage {
+        position: relative;
+        right: -725px;
+        margin-top: 30px;
+    }
+    
+}
+@media screen and (max-width: 1080px) {
+
+    .img1{
+        display: block;
+        width: 200px;
+        height: 200px;
+        top: 25px;
+        right: 5px;
+    }
+    #rightImage {
+        position: relative;
+        right: -725px;
+        margin-top: 30px;
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    .hero-wrapper-title {
+        font-size:60px
+    }
+
+    .hero-wrapper-description {
+        max-width:700px
+    }
+    .img1{
+        display: block;
+        width: 200px;
+        height: 200px;
+        top: 25px;
+        right: 5px;
+    }
+    #rightImage {
+        position: relative;
+        right: -625px;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 875px) {
+    .hero-wrapper-title {
+        font-size:60px
+    }
+
+    .hero-wrapper-description {
+        max-width:700px
+    }
+    .img1{
+        display: block;
+        width: 200px;
+        height: 200px;
+        top: 25px;
+        right: 5px;
+    }
+    #rightImage {
+        position: relative;
+        right: -425px;
+        margin-top: 30px;
+    }
+}
+@media screen and (max-width: 680px) {
+    .hero-wrapper-title {
+        font-size:40px
+    }
+
+    .hero-wrapper-description {
+        max-width: 450px;
+        font-size:15px
+    }
+    .about-experience-item {
+        margin-top: 100px;
+    }
+    .img1{
+        display: block;
+        width: 200px;
+        height: 200px;
+        top: 25px;
+        right: 5px;
+    }
+    #rightImage {
+        position: relative;
+        right: -275px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-wrapper-title {
+        font-size: 34px;
+        margin-bottom:10px
+    }
+
+    .hero-wrapper-description {
+        max-width: 350px;
+        font-size:14px
+    }
+    .about-experience-item {
+        margin-top: 100px;
+    }
+    .hero-title {
+        z-index: 1;
+        display: flex;
+        font-weight: 400;
+        font-size: 75px;
+        margin-top:125px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .hero-description {
+        max-width: 750px;
+        line-height: 1.8;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .about-description {
+        margin-top: 15px;
+        margin-right: 150px;
+        font-size: 17px;
+    }
+    .about-title {
+        margin-top: 75px;
+    }
+    .img1{
+        display: block;
+        width: 200px;
+        height: 200px;
+        top: 25px;
+        right: 5px;
+    }
+    #rightImage {
+        position: relative;
+        right: 5px;
+        margin-top: 30px;
+    }
+    .projects-container {
+        gap: 20px;
+        display: flex;
+        margin-top: 50px;
+        flex-direction:column;
+    }
+    .projects-wrapper {
+        margin-top: 75px;
+        gap: 10px;
+        display: flex;
+        flex-direction:column
+    }
+    .container {
+        background-color: rgb(192, 192, 192);
+        width: 80%;
+        border-radius: 15px;
+        margin-left: 5px;
+    }
+}
+
+.container { 
+    background-color: rgb(192, 192, 192); 
+    width: 80%; 
+    border-radius: 15px;
+    margin-left: 150px;
+} 
+.h4skills {
+    color:var(--white-color);
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.skill {  
+    color: black; 
+    padding: 1%; 
+    text-align: right; 
+    font-size: 20px; 
+    border-radius: 15px; 
+} 
+.html { 
+    background-color: #D35834;
+    width: 80%; 
+}
+.skill.html {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+
+.skill.html .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.css {
+    background-color: #459AF6;
+    width: 80%; 
+}
+.skill.css {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+
+.skill.css .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.javascript{
+    background-color: #F2DF50;
+    width: 20%; 
+}
+.skill.javascript {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.javascript .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.python{
+    background: #5280AF;
+    width: 35%; 
+}
+.skill.python {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.python .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.swift{
+    background: #5FCFFA;
+    width: 25%; 
+}
+.skill.swift {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.swift .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.bash{
+    background: #5b5858;
+    width: 20%; 
+}
+.skill.bash {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.bash .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.aws{
+    background-color: #F19E37;
+    width: 30%; 
+}
+.skill.aws {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.aws .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.docker{
+    background-color: #459AF6;
+    width: 20%; 
+}
+.skill.docker {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.docker .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.notion{
+    background: #5b5858;
+    width: 40%; 
+}
+.skill.notion {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.notion .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.tailwind{
+    background: #62BAF3;
+    width: 100%;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px); 
+}
+.skill.tailwind {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.tailwind .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.bootstrap{
+    background: #7C1FF2;
+    width: 13.5%;
+    
+}
+.skill.bootstrap {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.bootstrap .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.react{
+    background: #499CC5;
+    width: 100%; 
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+}
+.skill.react {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.react .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.typescript{
+    background: #4475C0;
+    width: 100%; 
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+}
+.skill.typescript {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.typescript .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.github{
+    background: #FFFFFF;
+    width: 60%; 
+}
+.skill.github {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.github .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.git{
+    background: #E25A37;
+    width: 100%;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px); 
+}
+.skill.git {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.git .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.nginx{
+    background: #43972A;
+    width: 15%; 
+}
+.skill.nginx {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.git .nginx {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.postgreSQL{
+    background: #40648D;
+    width: 100%;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+}
+.skill.postgreSQL {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.git .postgreSQL {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.nodejs{
+    background: #69A151;
+    width: 100%;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+}
+.skill.nodejs {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.git .nodejs {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.terraform{
+    background: #7345B6;
+    width: 100%;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+}
+.skill.terraform {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.git .terraform {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.ansible{
+    background: #d3d2d2;
+    width: 10%;
+}
+.skill.ansible {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.git .ansible {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.electronics{
+    background: #507B5B;
+    width: 100%;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+}
+.skill.electronics {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.git .electronics {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+
+.C{
+    background: #2869CB;
+    width: 10%;
+}
+.skill.C {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.C .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.Arduino{
+    background: #009587;
+    width: 100%;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+}
+.skill.Arduino {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.Arduino .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+.Raspberry_pi{
+    background: #FF4080;
+    width: 100%;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.5) 35px, rgba(255,255,255,.5) 70px);
+}
+.skill.Raspberry_pi {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-right: 5px;
+}
+.skill.Raspberry_pi .svg {
+    margin-left: 5px; /* Adds some space between the SVG and text */
+}
+:root {
+    --green: #40cf8e;
+    --text-color: #fff;
+    --white-color: #ededed;
+    --black-color: #131313
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: __inter_Fallback_20b187, ui-sans-serif, system-ui, -apple-system, "system-ui", Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji"
+}
+
+* ::selection {
+    color: var(--black-color);
+    background-color:#40cf8e
+}
+
+body {
+    letter-spacing: 1px;
+    font-weight: 300;
+    background-color: var(--black-color);
+    color: var(--text-color);
+    transition:all .2s ease
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:var(--white-color)
+}
+
+body svg {
+    color:var(--text-color)
+}
+
+a {
+    color: inherit;
+    text-decoration:none
+}
+
+a {
+    cursor:pointer
+}
+button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: white; /* This sets the color of the text to white */
+}
+
+
+.main {
+    margin: -100px auto 0;
+    max-width: 1300px;
+    padding:25px
+}
+
+@media screen and (min-width: 650px) {
+    .main {
+        margin-top: 0
+    }
+}
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    padding: 30px 0;
+    border-top: 1px solid #2d2d2d;
+    margin-top:30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.footer span {
+    font-size:12px
+}
+
+.footer-link:hover {
+    text-decoration:underline
+}
+
+.footer-social {
+    display: flex;
+    gap: 30px;
+    font-size:16px
+}
+
+.footer-social * {
+    transition:all .1s ease
+}
+
+.footer-social * :hover {
+    color:var(--green)
+}
+
+@media screen and (min-width: 650px) {
+    .footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 30px 0;
+        border-top: 1px solid #2d2d2d;
+        margin-top:30px
+    }
+
+    .footer-social {
+        display: flex;
+        gap: 20px;
+        font-size:18px
+    }
+}
+
+.center p {
+	color: rgb(136, 136, 136);
+	letter-spacing: 0.4px;
+}
+
+.center form {
+	width: 100%;
+}
+
+.center .input-area {
+    background-color: #bcb9b9;
+	position: relative;
+	margin: 10px 0;
+	height: 70px;
+	width: 500px;
+}
+
+.container .h-80 {
+	height: 100px;
+}
+
+.center input, .center textarea {
+    position: absolute;
+	display: block;
+	font-family: "Poppins", sans-serif;
+	font-size: 14px;
+	padding: 12px;
+	height: 100%;
+	width: 100%;
+    border: 1px solid #bcb9b9;
+    border-radius: 4px;
+    outline: none;
+    resize: none;
+}
+
+.center .sendbtn {
+    display: block;
+    width: 100%;
+    background: #660033;
+	color: #fff;
+	font-size: 18px;
+	padding: 11px;
+    border: none;
+	border-radius: 4px;
+    cursor: pointer;
+}
+
+.center .sendbtn:hover {
+  background-color: #993366;
+}
+.container.contact {
+	background-color: #bcb9b9;
+	border: 3px solid #660033;
+	border-radius: 10px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 60px;
+	text-align: center;
+	width: 600px;
+	max-width: 100%;
+}
+.center {
+    text-align: center;
+}
+
+.projects-container {
+    gap: 20px;
+    display: flex;
+    margin-top: 50px;
+    flex-direction:column;
+}
+
+.projects-headline {
+    font-size: 20px;
+    font-weight:400
+}
+
+.projects-wrapper {
+    gap: 10px;
+    display: flex;
+    flex-direction:column
+}
+
+.projects-card-gardient {
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    background: radial-gradient(100% 100% at 0% 0%, hsla(0, 0%, 100%, .03), transparent);
+    transition:all .1s ease-in
+}
+
+.projects-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 18px;
+    border-radius: 5px;
+    border: 1px solid #2d2d2d;
+    transition: border .2s ease;
+    font-size: 14px;
+    height: 150px;
+    background-color: #1c1c1c;
+    box-shadow:0 2px 3px #0000003d;
+    width: 600px;
+}
+
+.projects-card:hover .projects-card-gardient {
+    background:radial-gradient(100% 100% at 0% 0%, hsla(0, 0%, 100%, 0.64), transparent)
+}
+
+.projects-card:hover {
+    border:1px solid #4c4c4c
+}
+
+.projects-card-links {
+    gap: 30px;
+    display: flex;
+    align-self:flex-end
+}
+
+.projects-card-links a, .projects-card-links a * {
+    font-size: 18px;
+    transition:color .2s ease
+}
+
+.projects-card-links a:hover * {
+    color:var(--white-color)
+}
+
+.projects-card-name {
+    font-weight: 500;
+    margin-top: 55px;
+    text-transform: uppercase;
+    font-size:14px
+}
+
+.projects-card-languages {
+    display: flex;
+    align-self: center;
+    gap:15px
+}
+
+.projects-card:first-child .projects-card-languages span:last-child, .projects-card:nth-child(2) .projects-card-languages span:last-child, .projects-card:nth-child(3) .projects-card-languages span:first-child, .projects-card:last-child .projects-card-languages span:first-child {
+    display:none
+}
+
+
